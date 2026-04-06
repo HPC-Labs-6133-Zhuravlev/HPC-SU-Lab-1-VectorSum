@@ -236,12 +236,14 @@ Speedup_Kernel = CPU_Time_ms / GPU_Kernel_Time_ms
 В работе построены два графика:
 
 1. **Сравнение времени CPU, GPU full и GPU kernel only** (times_compare.png)
+
    Показывает, что:
    - CPU быстрее полной GPU-функции;
    - ядро GPU работает заметно быстрее полной GPU-версии;
    - с ростом размера массива преимущество kernel-only варианта становится все более заметным.
 
-2. **Сравнение ускорения `Speedup_Full` и `Speedup_Kernel`** (speedup_compare.png)
+3. **Сравнение ускорения `Speedup_Full` и `Speedup_Kernel`** (speedup_compare.png)
+
    График показывает:
    - `Speedup_Full < 1` на всем диапазоне размеров;
    - `Speedup_Kernel > 1` начиная с `N = 50000`;
